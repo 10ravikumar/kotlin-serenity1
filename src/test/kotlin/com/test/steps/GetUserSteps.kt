@@ -14,7 +14,7 @@ import org.hamcrest.Matchers.notNullValue
 
 class GetUserSteps {
 
-	@When("creates a new user using post request")
+	@When("user perform post operation to create new user")
 	fun createNewUser(entry: Map<String, String>) {
 		val user = UserRequest(entry.get("name"), entry.get("job"))
 		SerenityRest.given()
@@ -24,7 +24,7 @@ class GetUserSteps {
 			.post(ApplicationConfig.BASEURL.url)
 	}
 
-	@Then("the post API should contains expected values in response")
+	@Then("the post API should contain expected value in response")
 	fun verifyPostResponse(entry: Map<String, String>) {
 		restAssuredThat({ response ->
 			response
@@ -41,7 +41,7 @@ class GetUserSteps {
 		});
 	}
 
-	@When("fetch the Use details based on the user id like:{int}")
+	@When("user fetch the details based on the user id like:{int}")
 	fun getUser(userId: Int) {
 		SerenityRest.get(ApplicationConfig.BASEURL.url + "/${userId}");
 	}
