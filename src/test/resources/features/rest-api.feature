@@ -4,7 +4,6 @@
 Feature: Check the Rest API functionality.
 
   Scenario: verify the user API operation.
-  
     When creates a new user using post request
       | name | ravi kumar        |
       | job  | Software Engineer |

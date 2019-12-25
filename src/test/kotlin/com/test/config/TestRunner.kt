@@ -9,4 +9,4 @@ import org.junit.runner.RunWith;
         glue = arrayOf("com.test"),
         features = arrayOf("src/test/resources/features/")
 )
-class CucumberRunner {}
+class TestRunner

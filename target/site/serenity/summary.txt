@@ -1,9 +1,9 @@
-Serenity report generated 25-12-2019 23:28
+Serenity report generated 26-12-2019 00:22
 1 test scenarios 
 
-Passed:             0
+Passed:             1
 Pending             0
-Failed:             1
+Failed:             0
 Failed with errors: 0
 Compromised:        0
 Pending:            0
