@@ -4,13 +4,13 @@
 Feature: Check the Rest API functionality.
 
   Scenario: verify the user API operation.
-    When creates a new user using post request
+    When user perform post operation to create new user
       | name | ravi kumar        |
       | job  | Software Engineer |
     Then the API should return success status code 201
-    Then the post API should contains expected values in response
+    Then the post API should contain expected value in response
       | name | ravi kumar        |
       | job  | Software Engineer |
-    When fetch the Use details based on the user id like:7
+    When user fetch the details based on the user id like:7
     Then the API should return success status code 200
     
